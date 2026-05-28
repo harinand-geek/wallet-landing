@@ -921,11 +921,18 @@ html[data-theme="light"] .theme-dark-only { display: none; }
   .footer-cols h4 { margin-bottom: 4px; }
   .footer-bottom { padding: 16px 0; }
   .footer-bottom-inner {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 14px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
   }
-  .back-to-top { align-self: flex-end; }
+  .footer-copy {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .footer-dot { display: none; }
+  .back-to-top { order: -1; }
 }
 
 /* ── Small phone (≤ 480px) ── */
