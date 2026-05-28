@@ -16,7 +16,16 @@ export function DesktopShowcase() {
               <span></span>
               <span></span>
             </div>
-            <img src="/desktop-1.png" alt="Aperçu desktop du dashboard Miarina Wallet" />
+            <img
+              src="/desktop-1.png"
+              alt="Aperçu desktop du dashboard Miarina Wallet"
+              className="theme-dark-only"
+            />
+            <img
+              src="/desktop_cllair.png"
+              alt="Aperçu desktop du dashboard Miarina Wallet en mode clair"
+              className="theme-light-only"
+            />
           </div>
         </div>
       </div>
