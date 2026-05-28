@@ -2,23 +2,77 @@
 <html lang="fr" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0a4f3b" />
-  <title>Miarina Wallet — Votre argent reste clair, stable et maîtrisé</title>
-  <meta name="description" content="Application Web mobile-first pour gérer Mobile Money, banques, cash et crypto depuis une seule interface premium, responsive et installable comme une app native." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
+  <!-- ─── PRIMARY SEO ──────────────────────────────────────────── -->
+  <title>Miarina Wallet — Votre argent reste clair, stable et maîtrisé</title>
+  <meta name="description" content="Application Web mobile-first pour gérer Mobile Money (MVola, Orange Money, Airtel Money), banques, cash et crypto depuis une seule interface premium. Gratuit, sécurisé, installable comme une app native." />
+  <meta name="keywords" content="wallet madagascar, mobile money, mvola, orange money, airtel money, gestion budget, finances personnelles, pwa, miarina" />
+  <meta name="author" content="MIARINA.org" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0a4f3b" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#249a7c" media="(prefers-color-scheme: light)" />
+  <meta name="color-scheme" content="dark light" />
+
+  <link rel="canonical" href="https://wallet.miarina.org/" />
+
+  <!-- ─── ICONS / PWA ──────────────────────────────────────────── -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
 
+  <!-- ─── FONTS ────────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- ─── OPEN GRAPH (Facebook, LinkedIn, WhatsApp…) ───────────── -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Miarina Wallet" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://wallet.miarina.org/" />
   <meta property="og:title" content="Miarina Wallet — Votre argent reste clair, stable et maîtrisé" />
   <meta property="og:description" content="Application Web mobile-first pour gérer Mobile Money, banques, cash et crypto depuis une seule interface premium." />
-  <meta property="og:image" content="/favicon.png" />
+  <meta property="og:image" content="https://wallet.miarina.org/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aperçu du dashboard Miarina Wallet" />
 
+  <!-- ─── TWITTER CARDS ────────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Miarina Wallet — Votre argent reste clair, stable et maîtrisé" />
+  <meta name="twitter:description" content="Application Web mobile-first pour gérer Mobile Money, banques, cash et crypto depuis une seule interface premium." />
+  <meta name="twitter:image" content="https://wallet.miarina.org/og-image.png" />
+  <meta name="twitter:image:alt" content="Aperçu du dashboard Miarina Wallet" />
+
+  <!-- ─── JSON-LD STRUCTURED DATA ──────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Miarina Wallet",
+    "url": "https://wallet.miarina.org/",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web, iOS, Android, Windows, macOS",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "MIARINA.org",
+      "url": "https://miarina.org"
+    },
+    "description": "Application Web mobile-first pour gérer Mobile Money, banques, cash et crypto depuis une seule interface premium.",
+    "image": "https://wallet.miarina.org/og-image.png",
+    "inLanguage": "fr-FR",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- ─── FOUC-FREE THEME ──────────────────────────────────────── -->
   <script>
     // Read stored theme before React mounts to avoid flash of wrong theme
     (function () {
