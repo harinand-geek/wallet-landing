@@ -65,13 +65,15 @@ export function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span className="footer-copy">
-            <span>&copy; {year} <strong>Miarina Wallet</strong></span>
-            <span className="footer-dot" aria-hidden="true">·</span>
-            <span className="muted">
-              Conçu par{" "}
+            <span>
+              &copy; {year}{" "}
               <a href="https://miarina.org" target="_blank" rel="noopener noreferrer" className="footer-link">
                 MIARINA.org
               </a>
+            </span>
+            <span className="footer-dot" aria-hidden="true">·</span>
+            <span className="muted">
+              <strong>Miarina Wallet</strong> est un produit de l&apos;écosystème MIARINA
             </span>
           </span>
 
