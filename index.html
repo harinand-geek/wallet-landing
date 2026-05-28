@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a4f3b" />
+  <title>Miarina Wallet — Votre argent reste clair, stable et maîtrisé</title>
+  <meta name="description" content="Application Web mobile-first pour gérer Mobile Money, banques, cash et crypto depuis une seule interface premium, responsive et installable comme une app native." />
+
+  <link rel="icon" href="https://data.miarina.org//uploads/070442b71bcdcf77ea22fce3_1779962594.png" />
+  <link rel="apple-touch-icon" href="https://data.miarina.org//uploads/070442b71bcdcf77ea22fce3_1779962594.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Miarina Wallet — Votre argent reste clair, stable et maîtrisé" />
+  <meta property="og:description" content="Application Web mobile-first pour gérer Mobile Money, banques, cash et crypto depuis une seule interface premium." />
+  <meta property="og:image" content="https://data.miarina.org//uploads/070442b71bcdcf77ea22fce3_1779962594.png" />
+
+  <script>
+    // Read stored theme before React mounts to avoid flash of wrong theme
+    (function () {
+      try {
+        var stored = localStorage.getItem("miarina-landing-theme");
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
